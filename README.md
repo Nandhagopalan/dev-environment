@@ -10,4 +10,9 @@ Follow the below steps for faster development process
 
 ### Docker Command to get started
 
-`docker run --net=host -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v /home/nandhu/Downloads/deploy_stable_difusion:/home/ -it nandhu:1.0 bash`
+`docker run --gpus all --net=host -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v /home/nandhu/Downloads/deploy_stable_difusion:/home/ -it nandhu:1.0 bash`
+
+
+| Image  | Dependencies   |
+|---|---|
+| nandhu:1.1  | nvidia_cuda_py3.8   |
